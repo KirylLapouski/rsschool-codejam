@@ -6,15 +6,5 @@ function make(...vals) {
     args = args.concat(...newVals)
     return f
    }
-   
-}
 
-function sum(a, b) {
-    return a + b;
 }
-function devide(a,b){
-    return a/ b
-}
-
-console.log(make(100)(5, 2)(1)(sum))
-console.log(make(100)(5, 2)(1)(devide))

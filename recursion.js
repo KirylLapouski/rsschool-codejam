@@ -1,5 +1,4 @@
 function recursion(...objs){
-    // console.log(objs)
     if(objs.length === 0)
         return []
     let res = recursion( ...objs.reduce((acc,obj)=>{
@@ -13,5 +12,3 @@ function recursion(...objs){
     return res
 
 }
-
-console.log(recursion( {"value":100,"left":{"value":90,"left":{"value":70},"right":{"value":99}},"right":{"value":120,"left":{"value":110},"right":{"value":130}}}))
