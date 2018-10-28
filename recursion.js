@@ -10,3 +10,5 @@ function recursion(...objs) {
   res.unshift(objs.map(val => val.value));
   return res;
 }
+
+module.exports = recursion;
